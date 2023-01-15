@@ -81,5 +81,11 @@ const Wrapper = styled.nav`
       display: block;
     }
   }
+
+  @media (max-width: 480px) {
+    .logo {
+      display: none;
+    }
+  }
 `;
 export default Wrapper;

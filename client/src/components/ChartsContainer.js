@@ -14,7 +14,9 @@ const ChartsContainer = () => {
       <button type='button' onClick={() => setBarChart(!barChart)}>
         Change to: {barChart ? 'Area Chart' : 'Bar Chart'}?
       </button>
-      {barChart ? <BarChart data={data} /> : <AreaChart data={data} />}
+      <div className='graph-container'>
+        {barChart ? <BarChart data={data} /> : <AreaChart data={data} />}
+      </div>
     </Wrapper>
   );
 };

@@ -1,9 +1,14 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Wrapper = styled.aside`
   @media (min-width: 992px) {
     display: none;
   }
+  .logo {
+    width: 200px;
+    margin: 20px auto 0 auto;
+  }
+
   .sidebar-container {
     position: fixed;
     inset: 0;
@@ -72,5 +77,5 @@ const Wrapper = styled.aside`
   .active .icon {
     color: var(--primary-500);
   }
-`
-export default Wrapper
+`;
+export default Wrapper;
